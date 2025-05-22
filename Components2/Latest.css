@@ -1,0 +1,28 @@
+.blog{
+    width: 25%;
+}
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .feature {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+   
+  }
+  
+  .feature-icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: gainsboro;
+    transition:ease-in-out 0.3s;
+  }
+  .feature-icon:hover{
+    color: black;
+  }

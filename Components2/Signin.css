@@ -1,0 +1,121 @@
+.custom-cursor {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.1s ease;
+  transform: translate(-50%, -50%);
+  z-index: 1001; /* Set a higher z-index */
+  mix-blend-mode: difference;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cursor-dot {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: black;
+  border-radius: 50%;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sign-in-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.sign-in-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.close-btn:hover {
+  color: #666;
+}
+
+.hide {
+  display: none;
+}
+
+.sign-in-form h2 {
+  text-align: center;
+  color: rgb(155, 0, 155);
+  margin-bottom: 20px;
+}
+
+.sign-in-form input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.sign-in-form button {
+  width: 100%;
+  height: 40px;
+  background-color: purple;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-in-form button:hover {
+  background-color: rgb(155, 0, 155);
+}
+
+.sign-in-form p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sign-in-form a {
+  color: purple;
+  text-decoration: none;
+}
+
+.sign-in-form a:hover {
+  color: rgb(155, 0, 155);
+}

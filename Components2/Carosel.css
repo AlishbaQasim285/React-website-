@@ -1,0 +1,43 @@
+.carousel-item {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.carousel-open:checked + .carousel-item {
+  opacity: 1;
+  position: static;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-indicators li .carousel-bullet {
+  color: #ccc;
+}
+
+#carousel-1:checked
+  ~ .control-1
+  ~ .carousel-indicators
+  li:nth-child(1)
+  .carousel-bullet,
+#carousel-2:checked
+  ~ .control-2
+  ~ .carousel-indicators
+  li:nth-child(2)
+  .carousel-bullet,
+#carousel-3:checked
+  ~ .control-3
+  ~ .carousel-indicators
+  li:nth-child(3)
+  .carousel-bullet {
+  color: #000;
+}
